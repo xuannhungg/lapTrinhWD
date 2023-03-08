@@ -35,5 +35,10 @@ namespace DoAn_Nhom7
             string sqlStr = string.Format("SELECT *FROM CongDan");
             dbconnection.DanhSach(sqlStr, a);
         }
+
+        public void nguuu()
+        {
+            MessageBox.Show("ok");
+        }
     }
 }
