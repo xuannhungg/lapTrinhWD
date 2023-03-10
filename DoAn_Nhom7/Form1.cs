@@ -1,5 +1,4 @@
-﻿using DoAn;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -107,5 +106,12 @@ namespace DoAn_Nhom7
         {
             LoadData();
         }
+
+        private void btnCCCD_Click(object sender, EventArgs e)
+        {
+            CCCD formCCCD = new CCCD();
+            formCCCD.Show();
+        }
+
     }
 }

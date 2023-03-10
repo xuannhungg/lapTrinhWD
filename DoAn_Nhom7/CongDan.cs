@@ -4,21 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoAn
+namespace DoAn_Nhom7
 {
     public class CongDan
     {
-        public string hoTen;
-        public string ngayThangNamSinh;
-        public string gioiTinh;
-        public string cmnd;
-        public string danToc;
-        public string tinhTrangHonNhan;
-        public string noiDangKiKhaiSinh;
-        public string queQuan;
-        public string noiThuongTru;
-        public string trinhDoHocVan;
-        public string ngheNghiep;
+        private string hoTen;
+        private string ngayThangNamSinh;
+        private string gioiTinh;
+        private string cmnd;
+        private string danToc;
+        private string tinhTrangHonNhan;
+        private string noiDangKiKhaiSinh;
+        private string queQuan;
+        private string noiThuongTru;
+        private string trinhDoHocVan;
+        private string ngheNghiep;
+        private string luong;
+        private string tenMoiQuanHe; //cha, me, con,... cua nguoi khac
+        public Thue thueCaNhan;       
         public string HoTen
         { get { return hoTen; } set { hoTen = value; } }
         public string NgayThangNamSinh
@@ -41,11 +44,28 @@ namespace DoAn
         { get { return this.trinhDoHocVan; } set { this.trinhDoHocVan = value; } }
         public string NgheNghiep
         { get { return this.ngheNghiep; } set { this.ngheNghiep = value; } }
+
+        public string Luong
+        {
+            get { return this.luong; }
+            set { this.luong = value; }
+        }
+        public Thue ThueCaNhan
+        {
+            get { return this.thueCaNhan; }
+            set { this.thueCaNhan = value; }
+        }
+        public string TenMoiQuanHe
+        {
+            get { return this.tenMoiQuanHe; }
+            set { this.tenMoiQuanHe = value; }
+        }
+
         public CongDan()
         {
 
         }
-        public CongDan(string hoTen, string ngayThangNamSinh, string gioiTinh, string Cmnd, string danToc, string tinhTrangHonNhan, string noiDangKiKhaiSinh, string queQuan, string noiThuongTru, string trinhDoHocVan, string ngheNghiep)
+        public CongDan(string hoTen, string ngayThangNamSinh, string gioiTinh, string Cmnd, string danToc, string tinhTrangHonNhan, string noiDangKiKhaiSinh, string queQuan, string noiThuongTru, string trinhDoHocVan, string ngheNghiep, string luong)
         {
             this.HoTen = hoTen;
             this.NgayThangNamSinh = ngayThangNamSinh;
@@ -58,6 +78,7 @@ namespace DoAn
             this.NoiThuongTru = noiThuongTru;
             this.TrinhDoHocVan = trinhDoHocVan;
             this.NgheNghiep = ngheNghiep;
+            this.Luong = luong;
         }
         ~CongDan()
         {
