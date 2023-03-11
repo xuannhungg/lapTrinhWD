@@ -21,7 +21,6 @@ namespace DoAn_Nhom7
                 SqlCommand cmd = new SqlCommand(sqlStr, conn);
                 if (cmd.ExecuteNonQuery() > 0)
                     MessageBox.Show("Thanh cong");
-
             }
             catch (Exception ex)
             {
@@ -50,6 +49,15 @@ namespace DoAn_Nhom7
                 conn.Close();
             }
             return dtds;
+        }
+        public DataSet timCongDanTheoCCCD(string sqlStr, Thue thue)
+        {
+            conn.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
+            DataSet dts = new DataSet();
+            adapter.Fill(dts, "CCCD");
+            conn.Close();
+            return dts;
         }
     }
 }

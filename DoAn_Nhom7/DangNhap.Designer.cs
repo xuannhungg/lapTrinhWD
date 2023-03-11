@@ -112,6 +112,7 @@
             this.Controls.Add(this.txtTaiKhoan);
             this.Name = "DangNhap";
             this.Text = "DangNhap";
+            this.Load += new System.EventHandler(this.DangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

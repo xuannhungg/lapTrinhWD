@@ -36,5 +36,10 @@ namespace DoAn_Nhom7
             DangKi fDangKi = new DangKi();
             fDangKi.Show();
         }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
