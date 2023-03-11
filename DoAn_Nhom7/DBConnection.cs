@@ -15,7 +15,6 @@ namespace DoAn_Nhom7
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.conStr);
         public void XuLy(string sqlStr)
         {
-
             try
             {
                 conn.Open();
@@ -33,16 +32,14 @@ namespace DoAn_Nhom7
                 conn.Close();
             }
         }
-        public void DanhSach(string sqlStr, DataGridView a)
+        public DataTable DanhSach(string sqlStr)
         {
+            DataTable dtds = new DataTable();
             try
             {
                 conn.Open();
-                SqlCommand command = new SqlCommand(sqlStr, conn);
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                DataSet set = new DataSet();
-                adapter.Fill(set);
-                a.DataSource = set.Tables[0];
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
+                adapter.Fill(dtds);
             }
             catch (Exception exc)
             {
@@ -52,7 +49,7 @@ namespace DoAn_Nhom7
             {
                 conn.Close();
             }
-
+            return dtds;
         }
     }
 }

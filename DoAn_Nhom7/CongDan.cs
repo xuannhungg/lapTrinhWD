@@ -4,6 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+/*
+ * * Thuế:
+- class thuế: loại thuế, mức thuế, trạng thái (đã đóng chưa)
+- thêm list thuế vào class CongDan
+- thêm lương vào congDan
+- tra cứu thuế: theo mỗi nghề nghiệp thì có mức thuế bao nhiêu %, 
+nhập cccd thì hiện ra các loại thuế, tính tổng thuế còn nợ.
+ */
 namespace DoAn_Nhom7
 {
     public class CongDan
@@ -21,7 +30,7 @@ namespace DoAn_Nhom7
         private string ngheNghiep;
         private string luong;
         private string tenMoiQuanHe; //cha, me, con,... cua nguoi khac
-        public Thue thueCaNhan;       
+        public List<Thue> listThue;       
         public string HoTen
         { get { return hoTen; } set { hoTen = value; } }
         public string NgayThangNamSinh
@@ -50,10 +59,10 @@ namespace DoAn_Nhom7
             get { return this.luong; }
             set { this.luong = value; }
         }
-        public Thue ThueCaNhan
+        public List<Thue> ListThue
         {
-            get { return this.thueCaNhan; }
-            set { this.thueCaNhan = value; }
+            get { return this.listThue; }
+            set { this.listThue = value; }
         }
         public string TenMoiQuanHe
         {

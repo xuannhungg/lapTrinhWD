@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace DoAn_Nhom7
 {
-    public partial class CCCD : Form
+    public partial class FCongDan : Form
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.conStr);
         CongDanDAO cddao = new CongDanDAO();
-        public CCCD()
+        public FCongDan()
         {
             InitializeComponent();
         }
@@ -29,13 +29,13 @@ namespace DoAn_Nhom7
         private void btnXoa_Click(object sender, EventArgs e)
         {
             CongDan cd = new CongDan(txtHoTen.Text, dTPNgaySinh.Text, txtGioiTinh.Text, txtCCCD.Text, txtDanToc.Text, txtHonNhan.Text, txtKhaiSinh.Text, txtQueQuan.Text, txtThuongTru.Text, txtHocVan.Text, txtNgheNghiep.Text, txtLuong.Text);
-            cddao.Sua(cd);
+            cddao.Xoa(cd);
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
             CongDan cd = new CongDan(txtHoTen.Text, dTPNgaySinh.Text, txtGioiTinh.Text, txtCCCD.Text, txtDanToc.Text, txtHonNhan.Text, txtKhaiSinh.Text, txtQueQuan.Text, txtThuongTru.Text, txtHocVan.Text, txtNgheNghiep.Text, txtLuong.Text);
-            cddao.Xoa(cd);
+            cddao.Sua(cd);
             
         }
     }

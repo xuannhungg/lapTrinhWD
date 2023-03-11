@@ -25,7 +25,7 @@ namespace DoAn_Nhom7
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CCCD form2 = new CCCD();
+            FCongDan form2 = new FCongDan();
             form2.Show();
         }
 
@@ -93,7 +93,7 @@ namespace DoAn_Nhom7
 
         private void button17_Click(object sender, EventArgs e)
         {
-            CCCD form1 = new CCCD();
+            FCongDan form1 = new FCongDan();
             form1.ShowDialog();
         }
 
@@ -109,9 +109,19 @@ namespace DoAn_Nhom7
 
         private void btnCCCD_Click(object sender, EventArgs e)
         {
-            CCCD formCCCD = new CCCD();
+            FCongDan formCCCD = new FCongDan();
             formCCCD.Show();
         }
 
+        private void dGVDanhSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnThue_Click(object sender, EventArgs e)
+        {
+            FThue fThue = new FThue();
+            fThue.Show();
+        }
     }
 }

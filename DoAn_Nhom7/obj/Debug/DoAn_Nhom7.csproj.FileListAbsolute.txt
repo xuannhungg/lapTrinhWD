@@ -31,7 +31,6 @@ D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\bin\Debug\DoAn_Nho
 D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\bin\Debug\DoAn_Nhom7.pdb
 D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.csproj.AssemblyReference.cache
 D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.csproj.SuggestedBindingRedirects.cache
-D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.CCCD.resources
 D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.DangKi.resources
 D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.DangNhap.resources
 D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.Form1.resources
@@ -40,3 +39,5 @@ D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nho
 D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.csproj.CoreCompileInputs.cache
 D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.exe
 D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.pdb
+D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.FThue.resources
+D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.FCongDan.resources

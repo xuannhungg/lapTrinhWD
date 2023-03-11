@@ -1,6 +1,6 @@
 ﻿namespace DoAn_Nhom7
 {
-    partial class CCCD
+    partial class FCongDan
     {
         /// <summary>
         /// Required designer variable.
@@ -279,7 +279,7 @@
             this.label12.TabIndex = 32;
             this.label12.Text = "luong";
             // 
-            // CCCD
+            // FCongDan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -311,8 +311,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtHoTen);
             this.Controls.Add(this.label1);
-            this.Name = "CCCD";
-            this.Text = "CCCD";
+            this.Name = "FCongDan";
+            this.Text = "Cong Dan";
             this.ResumeLayout(false);
             this.PerformLayout();
 

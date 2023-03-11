@@ -41,7 +41,7 @@ namespace DoAn_Nhom7
                 SqlDataReader dta = cmd.ExecuteReader();
                 if (dta.Read() == true)
                 {
-                    CCCD form1 = new CCCD();
+                    Form1 form1 = new Form1();
                     form1.ShowDialog();
                 }
                 else

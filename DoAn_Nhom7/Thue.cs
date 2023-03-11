@@ -9,40 +9,32 @@ namespace DoAn_Nhom7
     public class Thue
     {
         private string loaiThue;
-        private string thueSuat;
+        private double mucThue;
         private string tinhTrang;
-        private string soNo;
-
         public string LoaiThue
         {
             get { return this.loaiThue; }
             set { this.loaiThue = value; }
         }
-        public string ThueSuat
+        public double MucThue
         {
-            get { return this.thueSuat; }
-            set { this.thueSuat = value; }
+            get { return this.mucThue; }
+            set { this.mucThue = value; }
         }
         public string TinhTrang
         {
             get { return this.tinhTrang; }
             set { this.tinhTrang = value; }
         }
-        public string SoNo
-        {
-            get { return this.soNo; }
-            set { this.soNo = value; }
-        }
         public Thue()
         {
 
         }
-        public Thue(string LoaiThue, string ThueSuat,string TinhTrang,string SoNo)
+        public Thue(string loaiThue, double mucThue, string tinhTrang)
         {
-            this.loaiThue = LoaiThue;
-            this.thueSuat = ThueSuat;
-            this.tinhTrang = TinhTrang;
-            this.soNo = SoNo;
+            this.LoaiThue = loaiThue;
+            this.MucThue = mucThue;
+            this.TinhTrang = tinhTrang;
         }
         ~Thue()
         {

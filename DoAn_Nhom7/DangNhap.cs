@@ -22,14 +22,19 @@ namespace DoAn_Nhom7
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            TaiKhoan tk = new TaiKhoan(txtTaiKhoan.Text, txtMatKhau.Text);
-            tkdao.DangNhap(tk);
+            if (txtTaiKhoan.Text == "" || txtMatKhau.Text == "")
+                MessageBox.Show("Tai khoan hoac mat khau khong duoc de trong");
+            else
+            {
+                TaiKhoan tk = new TaiKhoan(txtTaiKhoan.Text, txtMatKhau.Text);
+                tkdao.DangNhap(tk);
+            }
         }
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
-            Form1 form1= new Form1();
-            form1.ShowDialog();
+            DangKi fDangKi = new DangKi();
+            fDangKi.Show();
         }
     }
 }

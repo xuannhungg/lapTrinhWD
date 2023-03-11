@@ -230,6 +230,7 @@
             this.btnThue.TabIndex = 2;
             this.btnThue.Text = "Thue";
             this.btnThue.UseVisualStyleBackColor = true;
+            this.btnThue.Click += new System.EventHandler(this.btnThue_Click);
             // 
             // btnCCCD
             // 
@@ -294,6 +295,7 @@
             this.dGVDanhSach.RowTemplate.Height = 24;
             this.dGVDanhSach.Size = new System.Drawing.Size(820, 360);
             this.dGVDanhSach.TabIndex = 3;
+            this.dGVDanhSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVDanhSach_CellContentClick);
             // 
             // btnTimKiem
             // 
