@@ -36,9 +36,5 @@ namespace DoAn_Nhom7
             dbconnection.DanhSach(sqlStr, a);
         }
 
-        public void hihi()
-        {
-            MessageBox.Show("ok");
-        }
     }
 }
