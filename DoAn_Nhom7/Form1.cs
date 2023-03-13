@@ -1,5 +1,4 @@
-﻿using DoAn;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +25,7 @@ namespace DoAn_Nhom7
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CCCD form2 = new CCCD();
+            FCongDan form2 = new FCongDan();
             form2.Show();
         }
 
@@ -77,16 +76,16 @@ namespace DoAn_Nhom7
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             conn.Open();
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM CongDan WHERE hoTen LIKE N'%" + txtCCCD.Text + "%'", conn);
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM CongDan WHERE cmnd LIKE N'%" + txtCCCD.Text + "%'", conn);
             DataSet ds = new DataSet();
-            da.Fill(ds, "hoTen");
-            if (ds.Tables["hoTen"].Rows.Count > 0)
+            da.Fill(ds, "cmnd");
+            if (ds.Tables["cmnd"].Rows.Count > 0)
             {
-                dGVDanhSach.DataSource = ds.Tables["hoTen"];
+                dGVDanhSach.DataSource = ds.Tables["cmnd"];
             }
             else
             {
-                MessageBox.Show("Không tìm thấy ai có họ tên này!");
+                MessageBox.Show("Không tìm thấy ai có CMND này!");
                 txtCCCD.Text = "";
             }
             conn.Close();
@@ -94,18 +93,48 @@ namespace DoAn_Nhom7
 
         private void button17_Click(object sender, EventArgs e)
         {
-            CCCD form1 = new CCCD();
+            FCongDan form1 = new FCongDan();
             form1.ShowDialog();
         }
 
         public void LoadData()
         {
-            congdandao.DanhSach(dGVDanhSach);
+            conn.Open();
+            string sqlStr = "select * from CongDan";
+            SqlCommand command = new SqlCommand(sqlStr, conn);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataSet set = new DataSet();
+            adapter.Fill(set);
+            dGVDanhSach.DataSource = set.Tables[0];
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void btnCCCD_Click(object sender, EventArgs e)
+        {
+            FCongDan formCCCD = new FCongDan();
+            formCCCD.Show();
+        }
+
+        private void dGVDanhSach_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnThue_Click(object sender, EventArgs e)
+        {
+            FThue fThue = new FThue();
+            fThue.Show();
+        }
+
+        private void bthHonNhan_Click(object sender, EventArgs e)
+        {
+            HonNhanVaGiaDinh form1 = new HonNhanVaGiaDinh();
+            form1.ShowDialog();
         }
     }
 }

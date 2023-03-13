@@ -39,14 +39,14 @@
             // 
             // txtTaiKhoan
             // 
-            this.txtTaiKhoan.Location = new System.Drawing.Point(358, 85);
+            this.txtTaiKhoan.Location = new System.Drawing.Point(250, 65);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
             this.txtTaiKhoan.Size = new System.Drawing.Size(100, 22);
             this.txtTaiKhoan.TabIndex = 0;
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(358, 157);
+            this.txtMatKhau.Location = new System.Drawing.Point(250, 137);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(100, 22);
             this.txtMatKhau.TabIndex = 1;
@@ -54,7 +54,7 @@
             // lblTaiKhoan
             // 
             this.lblTaiKhoan.AutoSize = true;
-            this.lblTaiKhoan.Location = new System.Drawing.Point(231, 91);
+            this.lblTaiKhoan.Location = new System.Drawing.Point(123, 71);
             this.lblTaiKhoan.Name = "lblTaiKhoan";
             this.lblTaiKhoan.Size = new System.Drawing.Size(61, 16);
             this.lblTaiKhoan.TabIndex = 2;
@@ -63,7 +63,7 @@
             // lblMatKhau
             // 
             this.lblMatKhau.AutoSize = true;
-            this.lblMatKhau.Location = new System.Drawing.Point(231, 163);
+            this.lblMatKhau.Location = new System.Drawing.Point(123, 143);
             this.lblMatKhau.Name = "lblMatKhau";
             this.lblMatKhau.Size = new System.Drawing.Size(61, 16);
             this.lblMatKhau.TabIndex = 3;
@@ -71,7 +71,7 @@
             // 
             // btnDangNhap
             // 
-            this.btnDangNhap.Location = new System.Drawing.Point(358, 217);
+            this.btnDangNhap.Location = new System.Drawing.Point(420, 91);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(98, 33);
             this.btnDangNhap.TabIndex = 4;
@@ -82,7 +82,7 @@
             // lblKhongTaiKhoan
             // 
             this.lblKhongTaiKhoan.AutoSize = true;
-            this.lblKhongTaiKhoan.Location = new System.Drawing.Point(188, 313);
+            this.lblKhongTaiKhoan.Location = new System.Drawing.Point(164, 205);
             this.lblKhongTaiKhoan.Name = "lblKhongTaiKhoan";
             this.lblKhongTaiKhoan.Size = new System.Drawing.Size(121, 16);
             this.lblKhongTaiKhoan.TabIndex = 5;
@@ -90,7 +90,7 @@
             // 
             // btnDangKy
             // 
-            this.btnDangKy.Location = new System.Drawing.Point(358, 299);
+            this.btnDangKy.Location = new System.Drawing.Point(334, 191);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(113, 30);
             this.btnDangKy.TabIndex = 6;
@@ -102,7 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(665, 329);
             this.Controls.Add(this.btnDangKy);
             this.Controls.Add(this.lblKhongTaiKhoan);
             this.Controls.Add(this.btnDangNhap);
@@ -112,6 +112,7 @@
             this.Controls.Add(this.txtTaiKhoan);
             this.Name = "DangNhap";
             this.Text = "DangNhap";
+            this.Load += new System.EventHandler(this.DangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

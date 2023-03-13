@@ -38,7 +38,7 @@
             // lblMatKhau
             // 
             this.lblMatKhau.AutoSize = true;
-            this.lblMatKhau.Location = new System.Drawing.Point(129, 161);
+            this.lblMatKhau.Location = new System.Drawing.Point(78, 134);
             this.lblMatKhau.Name = "lblMatKhau";
             this.lblMatKhau.Size = new System.Drawing.Size(61, 16);
             this.lblMatKhau.TabIndex = 7;
@@ -47,7 +47,7 @@
             // lblTaiKhoan
             // 
             this.lblTaiKhoan.AutoSize = true;
-            this.lblTaiKhoan.Location = new System.Drawing.Point(129, 89);
+            this.lblTaiKhoan.Location = new System.Drawing.Point(78, 62);
             this.lblTaiKhoan.Name = "lblTaiKhoan";
             this.lblTaiKhoan.Size = new System.Drawing.Size(153, 16);
             this.lblTaiKhoan.TabIndex = 6;
@@ -55,21 +55,21 @@
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(319, 155);
+            this.txtMatKhau.Location = new System.Drawing.Point(268, 128);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(100, 22);
             this.txtMatKhau.TabIndex = 5;
             // 
             // txtTaiKhoan
             // 
-            this.txtTaiKhoan.Location = new System.Drawing.Point(319, 86);
+            this.txtTaiKhoan.Location = new System.Drawing.Point(268, 59);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
             this.txtTaiKhoan.Size = new System.Drawing.Size(100, 22);
             this.txtTaiKhoan.TabIndex = 4;
             // 
             // btnDangky
             // 
-            this.btnDangky.Location = new System.Drawing.Point(528, 110);
+            this.btnDangky.Location = new System.Drawing.Point(477, 83);
             this.btnDangky.Name = "btnDangky";
             this.btnDangky.Size = new System.Drawing.Size(75, 23);
             this.btnDangky.TabIndex = 8;
@@ -81,7 +81,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(684, 240);
             this.Controls.Add(this.btnDangky);
             this.Controls.Add(this.lblMatKhau);
             this.Controls.Add(this.lblTaiKhoan);

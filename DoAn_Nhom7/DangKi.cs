@@ -22,8 +22,13 @@ namespace DoAn_Nhom7
 
         private void btnDangky_Click(object sender, EventArgs e)
         {
-            TaiKhoan tk = new TaiKhoan(txtTaiKhoan.Text, txtMatKhau.Text);
-            tkdao.DangKy(tk);
+            if (txtTaiKhoan.Text == "" || txtMatKhau.Text == "")
+                MessageBox.Show("Tai khoan hoac mat khau khong duoc de trong");
+            else
+            {
+                TaiKhoan tk = new TaiKhoan(txtTaiKhoan.Text, txtMatKhau.Text);
+                tkdao.DangKy(tk);
+            }
         }
     }
 }

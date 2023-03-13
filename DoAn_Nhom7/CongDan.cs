@@ -4,7 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoAn
+
+/*
+ * * Thuế:
+- class thuế: loại thuế, mức thuế, trạng thái (đã đóng chưa)
+- thêm list thuế vào class CongDan
+- thêm lương vào congDan
+- tra cứu thuế: theo mỗi nghề nghiệp thì có mức thuế bao nhiêu %, 
+nhập cccd thì hiện ra các loại thuế, tính tổng thuế còn nợ.
+ */
+namespace DoAn_Nhom7
 {
     public class CongDan
     {
@@ -19,6 +28,9 @@ namespace DoAn
         public string noiThuongTru;
         public string trinhDoHocVan;
         public string ngheNghiep;
+        public string luong;
+        public string tenMoiQuanHe; //cha, me, con,... cua nguoi khac
+        public List<Thue> listThue;       
         public string HoTen
         { get { return hoTen; } set { hoTen = value; } }
         public string NgayThangNamSinh
@@ -41,11 +53,28 @@ namespace DoAn
         { get { return this.trinhDoHocVan; } set { this.trinhDoHocVan = value; } }
         public string NgheNghiep
         { get { return this.ngheNghiep; } set { this.ngheNghiep = value; } }
+
+        public string Luong
+        {
+            get { return this.luong; }
+            set { this.luong = value; }
+        }
+        public List<Thue> ListThue
+        {
+            get { return this.listThue; }
+            set { this.listThue = value; }
+        }
+        public string TenMoiQuanHe
+        {
+            get { return this.tenMoiQuanHe; }
+            set { this.tenMoiQuanHe = value; }
+        }
+
         public CongDan()
         {
 
         }
-        public CongDan(string hoTen, string ngayThangNamSinh, string gioiTinh, string Cmnd, string danToc, string tinhTrangHonNhan, string noiDangKiKhaiSinh, string queQuan, string noiThuongTru, string trinhDoHocVan, string ngheNghiep)
+        public CongDan(string hoTen, string ngayThangNamSinh, string gioiTinh, string Cmnd, string danToc, string tinhTrangHonNhan, string noiDangKiKhaiSinh, string queQuan, string noiThuongTru, string trinhDoHocVan, string ngheNghiep, string luong)
         {
             this.HoTen = hoTen;
             this.NgayThangNamSinh = ngayThangNamSinh;
@@ -58,6 +87,11 @@ namespace DoAn
             this.NoiThuongTru = noiThuongTru;
             this.TrinhDoHocVan = trinhDoHocVan;
             this.NgheNghiep = ngheNghiep;
+            this.Luong = luong;
+        }
+        public CongDan(string Cmnd) 
+        {            
+            this.cmnd = Cmnd;
         }
         ~CongDan()
         {

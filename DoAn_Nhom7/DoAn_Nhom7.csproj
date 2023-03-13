@@ -47,11 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CCCD.cs">
+    <Compile Include="DangKyKetHon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CCCD.Designer.cs">
-      <DependentUpon>CCCD.cs</DependentUpon>
+    <Compile Include="DangKyKetHon.Designer.cs">
+      <DependentUpon>DangKyKetHon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangKyLyHon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKyLyHon.Designer.cs">
+      <DependentUpon>DangKyLyHon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCongDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCongDan.Designer.cs">
+      <DependentUpon>FCongDan.cs</DependentUpon>
     </Compile>
     <Compile Include="CongDan.cs" />
     <Compile Include="CongDanDAO.cs" />
@@ -74,13 +86,32 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FThue.Designer.cs">
+      <DependentUpon>FThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HonNhanVaGiaDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HonNhanVaGiaDinh.Designer.cs">
+      <DependentUpon>HonNhanVaGiaDinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaiKhoan.cs" />
     <Compile Include="TaiKhoanDAO.cs" />
     <Compile Include="Thue.cs" />
-    <EmbeddedResource Include="CCCD.resx">
-      <DependentUpon>CCCD.cs</DependentUpon>
+    <Compile Include="ThueDAO.cs" />
+    <EmbeddedResource Include="DangKyKetHon.resx">
+      <DependentUpon>DangKyKetHon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangKyLyHon.resx">
+      <DependentUpon>DangKyLyHon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCongDan.resx">
+      <DependentUpon>FCongDan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DangKi.resx">
       <DependentUpon>DangKi.cs</DependentUpon>
@@ -90,6 +121,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FThue.resx">
+      <DependentUpon>FThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HonNhanVaGiaDinh.resx">
+      <DependentUpon>HonNhanVaGiaDinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,4 +1,4 @@
-﻿use project_LTWD;
+﻿
 CREATE TABLE CongDan (
  hoTen varchar(100),
  ngayThangNamSinh varchar(255),
@@ -21,5 +21,3 @@ INSERT INTO CongDan (hoTen, ngayThangNamSinh, gioiTinh,cmnd,danToc,tinhTrangHonN
 VALUES ('nva2', '25/12/2003', 'nam','1800458','kinh','chua ket hon','nghe an','nghe an','nghe an','dai hoc','sinh vien', '0');
 
 select * from CongDan
-
-

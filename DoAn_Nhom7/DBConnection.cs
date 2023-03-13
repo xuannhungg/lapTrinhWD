@@ -15,14 +15,12 @@ namespace DoAn_Nhom7
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.conStr);
         public void XuLy(string sqlStr)
         {
-
             try
             {
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(sqlStr, conn);
                 if (cmd.ExecuteNonQuery() > 0)
                     MessageBox.Show("Thanh cong");
-
             }
             catch (Exception ex)
             {
@@ -33,16 +31,14 @@ namespace DoAn_Nhom7
                 conn.Close();
             }
         }
-        public void DanhSach(string sqlStr, DataGridView a)
+        public DataTable DanhSach(string sqlStr)
         {
+            DataTable dtds = new DataTable();
             try
             {
                 conn.Open();
-                SqlCommand command = new SqlCommand(sqlStr, conn);
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                DataSet set = new DataSet();
-                adapter.Fill(set);
-                a.DataSource = set.Tables[0];
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
+                adapter.Fill(dtds);
             }
             catch (Exception exc)
             {
@@ -52,7 +48,16 @@ namespace DoAn_Nhom7
             {
                 conn.Close();
             }
-
+            return dtds;
+        }
+        public DataSet timCongDanTheoCCCD(string sqlStr, Thue thue)
+        {
+            conn.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
+            DataSet dts = new DataSet();
+            adapter.Fill(dts, "CCCD");
+            conn.Close();
+            return dts;
         }
     }
 }

@@ -46,6 +46,7 @@
             this.lblDichVu = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.dGVDanhSach = new System.Windows.Forms.DataGridView();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtCCCD = new System.Windows.Forms.TextBox();
@@ -64,7 +65,6 @@
             this.button14 = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.tclChucNang.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -194,6 +194,7 @@
             this.bthHonNhan.TabIndex = 6;
             this.bthHonNhan.Text = "Hon nhan va gia dinh";
             this.bthHonNhan.UseVisualStyleBackColor = true;
+            this.bthHonNhan.Click += new System.EventHandler(this.bthHonNhan_Click);
             // 
             // btnThongKeDS
             // 
@@ -230,6 +231,7 @@
             this.btnThue.TabIndex = 2;
             this.btnThue.Text = "Thue";
             this.btnThue.UseVisualStyleBackColor = true;
+            this.btnThue.Click += new System.EventHandler(this.btnThue_Click);
             // 
             // btnCCCD
             // 
@@ -239,6 +241,7 @@
             this.btnCCCD.TabIndex = 1;
             this.btnCCCD.Text = "Can cuoc cong dan";
             this.btnCCCD.UseVisualStyleBackColor = true;
+            this.btnCCCD.Click += new System.EventHandler(this.btnCCCD_Click);
             // 
             // lblDichVu
             // 
@@ -274,6 +277,16 @@
             this.tabPage2.Text = "Tra cuu ho so";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(731, 25);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 26);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Refresh";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // dGVDanhSach
             // 
             this.dGVDanhSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -283,6 +296,7 @@
             this.dGVDanhSach.RowTemplate.Height = 24;
             this.dGVDanhSach.Size = new System.Drawing.Size(820, 360);
             this.dGVDanhSach.TabIndex = 3;
+            this.dGVDanhSach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGVDanhSach_CellContentClick);
             // 
             // btnTimKiem
             // 
@@ -448,16 +462,6 @@
             this.tabPage3.TabIndex = 6;
             this.tabPage3.Text = "Thong bao";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(731, 25);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 26);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Refresh";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
