@@ -17,19 +17,19 @@ namespace DoAn_Nhom7
 {
     public class CongDan
     {
-        private string hoTen;
-        private string ngayThangNamSinh;
-        private string gioiTinh;
-        private string cmnd;
-        private string danToc;
-        private string tinhTrangHonNhan;
-        private string noiDangKiKhaiSinh;
-        private string queQuan;
-        private string noiThuongTru;
-        private string trinhDoHocVan;
-        private string ngheNghiep;
-        private string luong;
-        private string tenMoiQuanHe; //cha, me, con,... cua nguoi khac
+        public string hoTen;
+        public string ngayThangNamSinh;
+        public string gioiTinh;
+        public string cmnd;
+        public string danToc;
+        public string tinhTrangHonNhan;
+        public string noiDangKiKhaiSinh;
+        public string queQuan;
+        public string noiThuongTru;
+        public string trinhDoHocVan;
+        public string ngheNghiep;
+        public string luong;
+        public string tenMoiQuanHe; //cha, me, con,... cua nguoi khac
         public List<Thue> listThue;       
         public string HoTen
         { get { return hoTen; } set { hoTen = value; } }
@@ -88,6 +88,10 @@ namespace DoAn_Nhom7
             this.TrinhDoHocVan = trinhDoHocVan;
             this.NgheNghiep = ngheNghiep;
             this.Luong = luong;
+        }
+        public CongDan(string Cmnd) 
+        {            
+            this.cmnd = Cmnd;
         }
         ~CongDan()
         {

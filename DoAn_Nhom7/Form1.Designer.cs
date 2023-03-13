@@ -194,6 +194,7 @@
             this.bthHonNhan.TabIndex = 6;
             this.bthHonNhan.Text = "Hon nhan va gia dinh";
             this.bthHonNhan.UseVisualStyleBackColor = true;
+            this.bthHonNhan.Click += new System.EventHandler(this.bthHonNhan_Click);
             // 
             // btnThongKeDS
             // 

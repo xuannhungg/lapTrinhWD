@@ -21,19 +21,28 @@ namespace DoAn_Nhom7
         }
         public void Sua(CongDan cd)
         {
-            string sqlStr = string.Format("UPDATE CongDan SET  ngayThangNamSinh = '{0}', gioiTinh= '{1}' , cmnd = '{2}', danToc= '{3}', tinhTrangHonNhan='{4}', noiDangKiKhaiSinh= '{5}', queQuan='{6}', noiThuongTru= '{7}', trinhDoHocVan= '{8}', ngheNghiep='{9}', luong = '{10}' WHERE hoTen = '{11}'",  cd.NgayThangNamSinh, cd.GioiTinh, cd.CMND, cd.DanToc, cd.TinhTrangHonNhan, cd.NoiDangKiKhaiSinh, cd.QueQuan, cd.NoiThuongTru, cd.TrinhDoHocVan, cd.Luong, cd.NgheNghiep,cd.HoTen);
+            string sqlStr = string.Format("UPDATE CongDan SET  ngayThangNamSinh = '{0}', gioiTinh= '{1}' , cmnd = '{2}', danToc= '{3}', tinhTrangHonNhan='{4}', noiDangKiKhaiSinh= '{5}', queQuan='{6}', noiThuongTru= '{7}', trinhDoHocVan= '{8}', ngheNghiep='{9}', luong = '{10}' WHERE cmnd = '{11}'",  cd.NgayThangNamSinh, cd.GioiTinh, cd.CMND, cd.DanToc, cd.TinhTrangHonNhan, cd.NoiDangKiKhaiSinh, cd.QueQuan, cd.NoiThuongTru, cd.TrinhDoHocVan, cd.Luong, cd.NgheNghiep,cd.CMND);
             dbconnection.XuLy(sqlStr);
         }
         public void Xoa(CongDan cd)
         {
-            string sqlStr = string.Format("DELETE FROM CongDan WHERE hoTen = '{0}'", cd.HoTen);
+            string sqlStr = string.Format("DELETE FROM CongDan WHERE cmnd = '{0}'", cd.CMND);
             dbconnection.XuLy(sqlStr);
         }
         public DataTable DanhSach(DataGridView a)
         {
-            string sqlStr = string.Format("SELECT *FROM CongDan");
+            string sqlStr ="select * from CongDan";
             return dbconnection.DanhSach(sqlStr);
-        }               
-
+        }
+        public void CapNhatLyHon(CongDan cd)
+        {
+            string sqlStr = string.Format("UPDATE CongDan SET  tinhTrangHonNhan='Da Ly Hon' WHERE CMND = '{0}'",cd.CMND);
+            dbconnection.XuLy(sqlStr);
+        }
+        public void CapNhatKetHon(CongDan cd)
+        {
+            string sqlStr = string.Format("UPDATE CongDan SET  tinhTrangHonNhan='Da Ket Hon' WHERE CMND = '{0}'", cd.CMND);
+            dbconnection.XuLy(sqlStr);
+        }
     }
 }
