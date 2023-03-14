@@ -45,3 +45,6 @@ C:\Users\User\source\repos\Project_LTWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.DangKyLy
 C:\Users\User\source\repos\Project_LTWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.FCongDan.resources
 C:\Users\User\source\repos\Project_LTWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.FThue.resources
 C:\Users\User\source\repos\Project_LTWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.HonNhanVaGiaDinh.resources
+D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.DangKyKetHon.resources
+D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.DangKyLyHon.resources
+D:\Nam2\HK2\LapTrinhWindow\GITHUB\DO_AN\lapTrinhWD\DoAn_Nhom7\obj\Debug\DoAn_Nhom7.HonNhanVaGiaDinh.resources

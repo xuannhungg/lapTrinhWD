@@ -67,9 +67,15 @@ namespace DoAn_Nhom7
             txtLoaiThue.Text = row.Cells[1].Value.ToString();
             txtMucThue.Text = row.Cells[2].Value.ToString();
             if (row.Cells[3].Value.ToString() == "Chua dong")
+            {
                 cbChuaDong.Checked = true;
+                cbDaDong.Checked = false;
+            }
             else if (row.Cells[3].Value.ToString() == "Da dong")
+            {
                 cbDaDong.Checked = true;
+                cbChuaDong.Checked = false;
+            }
 
             tinhSoTienCanDong();
             LayThongTinCongDan();
@@ -107,6 +113,7 @@ namespace DoAn_Nhom7
                 cbChuaDong.Checked = false;
                 cbDaDong.Checked = true;
                 txtSoTienCanDong.Text = "0";
+                LayDanhSach();
             }
         }
         private void tabPage2_Click(object sender, EventArgs e)
