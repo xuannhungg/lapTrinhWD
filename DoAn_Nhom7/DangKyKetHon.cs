@@ -14,6 +14,7 @@ namespace DoAn_Nhom7
     public partial class DangKyKetHon : Form
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.conStr);
+        DBConnection dbconnection = new DBConnection();
         CongDanDAO cddao = new CongDanDAO();
         public DangKyKetHon()
         {
@@ -32,19 +33,8 @@ namespace DoAn_Nhom7
         {
             if (e.KeyCode == Keys.Enter)
             {
-                conn.Open();
-                string sqlStr = "Select * from CongDan where cmnd = '" + txtGiayToTuyThanNam.Text + "'";
-                SqlCommand cmd = new SqlCommand(sqlStr, conn);
-                SqlDataReader dta = cmd.ExecuteReader();
-                while (dta.Read())
-                {
-                    txtHoTenNam.Text = Convert.ToString(dta["hoTen"]);
-                    txtNgaySinhNam.Text = Convert.ToString(dta["ngayThangNamSinh"]); ;
-                    txtDanTocNam.Text = Convert.ToString(dta["danToc"]);
-                    txtQuocTichNam.Text = Convert.ToString(dta["queQuan"]);
-                    txtNoiCuTruNam.Text = Convert.ToString(dta["noiThuongTru"]);
-                }
-                conn.Close();
+                dbconnection.LapDayThongTin(txtGiayToTuyThanNam, txtHoTenNam, txtNgaySinhNam, txtDanTocNam, txtQuocTichNam, txtNoiCuTruNam);
+
             }
         }
 
@@ -52,19 +42,7 @@ namespace DoAn_Nhom7
         {
             if (e.KeyCode == Keys.Enter)
             {
-                conn.Open();
-                string sqlStr = "Select * from CongDan where cmnd = '" + txtGiayToTuyThanNu.Text + "'";
-                SqlCommand cmd = new SqlCommand(sqlStr, conn);
-                SqlDataReader dta = cmd.ExecuteReader();
-                while (dta.Read())
-                {
-                    txtHoTenNu.Text = Convert.ToString(dta["hoTen"]);
-                    txtNgaySinhNu.Text = Convert.ToString(dta["ngayThangNamSinh"]); ;
-                    txtDanTocNu.Text = Convert.ToString(dta["danToc"]);
-                    txtQuocTichNu.Text = Convert.ToString(dta["queQuan"]);
-                    txtNoiCuTruNu.Text = Convert.ToString(dta["noiThuongTru"]);
-                }
-                conn.Close();
+                dbconnection.LapDayThongTin(txtGiayToTuyThanNu, txtHoTenNu, txtNgaySinhNu,txtDanTocNu, txtQuocTichNu, txtNoiCuTruNu);
             }
         }
     }
