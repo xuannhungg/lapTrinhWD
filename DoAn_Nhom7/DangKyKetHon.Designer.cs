@@ -39,7 +39,7 @@
             this.txtNgaySinhNam = new System.Windows.Forms.TextBox();
             this.txtDanTocNam = new System.Windows.Forms.TextBox();
             this.txtQuocTichNam = new System.Windows.Forms.TextBox();
-            this.txtNoiCuTru = new System.Windows.Forms.TextBox();
+            this.txtNoiCuTruNam = new System.Windows.Forms.TextBox();
             this.txtGiayToTuyThanNam = new System.Windows.Forms.TextBox();
             this.txtLanKetHonNam = new System.Windows.Forms.TextBox();
             this.txtLanKetHonNu = new System.Windows.Forms.TextBox();
@@ -59,7 +59,7 @@
             // lblHoTen
             // 
             this.lblHoTen.AutoSize = true;
-            this.lblHoTen.Location = new System.Drawing.Point(109, 121);
+            this.lblHoTen.Location = new System.Drawing.Point(109, 158);
             this.lblHoTen.Name = "lblHoTen";
             this.lblHoTen.Size = new System.Drawing.Size(52, 16);
             this.lblHoTen.TabIndex = 0;
@@ -68,7 +68,7 @@
             // lblNgaySinh
             // 
             this.lblNgaySinh.AutoSize = true;
-            this.lblNgaySinh.Location = new System.Drawing.Point(109, 154);
+            this.lblNgaySinh.Location = new System.Drawing.Point(109, 191);
             this.lblNgaySinh.Name = "lblNgaySinh";
             this.lblNgaySinh.Size = new System.Drawing.Size(69, 16);
             this.lblNgaySinh.TabIndex = 1;
@@ -77,7 +77,7 @@
             // lblDanToc
             // 
             this.lblDanToc.AutoSize = true;
-            this.lblDanToc.Location = new System.Drawing.Point(108, 183);
+            this.lblDanToc.Location = new System.Drawing.Point(108, 220);
             this.lblDanToc.Name = "lblDanToc";
             this.lblDanToc.Size = new System.Drawing.Size(59, 16);
             this.lblDanToc.TabIndex = 2;
@@ -86,7 +86,7 @@
             // lblQuocTich
             // 
             this.lblQuocTich.AutoSize = true;
-            this.lblQuocTich.Location = new System.Drawing.Point(107, 220);
+            this.lblQuocTich.Location = new System.Drawing.Point(107, 257);
             this.lblQuocTich.Name = "lblQuocTich";
             this.lblQuocTich.Size = new System.Drawing.Size(68, 16);
             this.lblQuocTich.TabIndex = 3;
@@ -95,7 +95,7 @@
             // lblNoiCuTru
             // 
             this.lblNoiCuTru.AutoSize = true;
-            this.lblNoiCuTru.Location = new System.Drawing.Point(109, 254);
+            this.lblNoiCuTru.Location = new System.Drawing.Point(109, 291);
             this.lblNoiCuTru.Name = "lblNoiCuTru";
             this.lblNoiCuTru.Size = new System.Drawing.Size(70, 16);
             this.lblNoiCuTru.TabIndex = 4;
@@ -104,7 +104,7 @@
             // lblGiayToTuyThan
             // 
             this.lblGiayToTuyThan.AutoSize = true;
-            this.lblGiayToTuyThan.Location = new System.Drawing.Point(107, 293);
+            this.lblGiayToTuyThan.Location = new System.Drawing.Point(107, 129);
             this.lblGiayToTuyThan.Name = "lblGiayToTuyThan";
             this.lblGiayToTuyThan.Size = new System.Drawing.Size(115, 16);
             this.lblGiayToTuyThan.TabIndex = 5;
@@ -121,45 +121,46 @@
             // 
             // txtHoTenNam
             // 
-            this.txtHoTenNam.Location = new System.Drawing.Point(283, 118);
+            this.txtHoTenNam.Location = new System.Drawing.Point(283, 155);
             this.txtHoTenNam.Name = "txtHoTenNam";
             this.txtHoTenNam.Size = new System.Drawing.Size(100, 22);
             this.txtHoTenNam.TabIndex = 7;
             // 
             // txtNgaySinhNam
             // 
-            this.txtNgaySinhNam.Location = new System.Drawing.Point(283, 146);
+            this.txtNgaySinhNam.Location = new System.Drawing.Point(283, 183);
             this.txtNgaySinhNam.Name = "txtNgaySinhNam";
             this.txtNgaySinhNam.Size = new System.Drawing.Size(100, 22);
             this.txtNgaySinhNam.TabIndex = 8;
             // 
             // txtDanTocNam
             // 
-            this.txtDanTocNam.Location = new System.Drawing.Point(283, 180);
+            this.txtDanTocNam.Location = new System.Drawing.Point(283, 217);
             this.txtDanTocNam.Name = "txtDanTocNam";
             this.txtDanTocNam.Size = new System.Drawing.Size(100, 22);
             this.txtDanTocNam.TabIndex = 9;
             // 
             // txtQuocTichNam
             // 
-            this.txtQuocTichNam.Location = new System.Drawing.Point(283, 217);
+            this.txtQuocTichNam.Location = new System.Drawing.Point(283, 254);
             this.txtQuocTichNam.Name = "txtQuocTichNam";
             this.txtQuocTichNam.Size = new System.Drawing.Size(100, 22);
             this.txtQuocTichNam.TabIndex = 10;
             // 
-            // txtNoiCuTru
+            // txtNoiCuTruNam
             // 
-            this.txtNoiCuTru.Location = new System.Drawing.Point(283, 251);
-            this.txtNoiCuTru.Name = "txtNoiCuTru";
-            this.txtNoiCuTru.Size = new System.Drawing.Size(100, 22);
-            this.txtNoiCuTru.TabIndex = 11;
+            this.txtNoiCuTruNam.Location = new System.Drawing.Point(283, 288);
+            this.txtNoiCuTruNam.Name = "txtNoiCuTruNam";
+            this.txtNoiCuTruNam.Size = new System.Drawing.Size(100, 22);
+            this.txtNoiCuTruNam.TabIndex = 11;
             // 
             // txtGiayToTuyThanNam
             // 
-            this.txtGiayToTuyThanNam.Location = new System.Drawing.Point(283, 284);
+            this.txtGiayToTuyThanNam.Location = new System.Drawing.Point(283, 120);
             this.txtGiayToTuyThanNam.Name = "txtGiayToTuyThanNam";
             this.txtGiayToTuyThanNam.Size = new System.Drawing.Size(100, 22);
             this.txtGiayToTuyThanNam.TabIndex = 12;
+            this.txtGiayToTuyThanNam.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtGiayToTuyThanNam_KeyDown);
             // 
             // txtLanKetHonNam
             // 
@@ -177,42 +178,43 @@
             // 
             // txtGiayToTuyThanNu
             // 
-            this.txtGiayToTuyThanNu.Location = new System.Drawing.Point(526, 284);
+            this.txtGiayToTuyThanNu.Location = new System.Drawing.Point(526, 120);
             this.txtGiayToTuyThanNu.Name = "txtGiayToTuyThanNu";
             this.txtGiayToTuyThanNu.Size = new System.Drawing.Size(100, 22);
             this.txtGiayToTuyThanNu.TabIndex = 19;
+            this.txtGiayToTuyThanNu.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtGiayToTuyThanNu_KeyDown);
             // 
             // txtNoiCuTruNu
             // 
-            this.txtNoiCuTruNu.Location = new System.Drawing.Point(526, 251);
+            this.txtNoiCuTruNu.Location = new System.Drawing.Point(526, 288);
             this.txtNoiCuTruNu.Name = "txtNoiCuTruNu";
             this.txtNoiCuTruNu.Size = new System.Drawing.Size(100, 22);
             this.txtNoiCuTruNu.TabIndex = 18;
             // 
             // txtQuocTichNu
             // 
-            this.txtQuocTichNu.Location = new System.Drawing.Point(526, 217);
+            this.txtQuocTichNu.Location = new System.Drawing.Point(526, 254);
             this.txtQuocTichNu.Name = "txtQuocTichNu";
             this.txtQuocTichNu.Size = new System.Drawing.Size(100, 22);
             this.txtQuocTichNu.TabIndex = 17;
             // 
             // txtDanTocNu
             // 
-            this.txtDanTocNu.Location = new System.Drawing.Point(526, 180);
+            this.txtDanTocNu.Location = new System.Drawing.Point(526, 217);
             this.txtDanTocNu.Name = "txtDanTocNu";
             this.txtDanTocNu.Size = new System.Drawing.Size(100, 22);
             this.txtDanTocNu.TabIndex = 16;
             // 
             // txtNgaySinhNu
             // 
-            this.txtNgaySinhNu.Location = new System.Drawing.Point(526, 146);
+            this.txtNgaySinhNu.Location = new System.Drawing.Point(526, 183);
             this.txtNgaySinhNu.Name = "txtNgaySinhNu";
             this.txtNgaySinhNu.Size = new System.Drawing.Size(100, 22);
             this.txtNgaySinhNu.TabIndex = 15;
             // 
             // txtHoTenNu
             // 
-            this.txtHoTenNu.Location = new System.Drawing.Point(526, 118);
+            this.txtHoTenNu.Location = new System.Drawing.Point(526, 155);
             this.txtHoTenNu.Name = "txtHoTenNu";
             this.txtHoTenNu.Size = new System.Drawing.Size(100, 22);
             this.txtHoTenNu.TabIndex = 14;
@@ -220,7 +222,7 @@
             // lablblThongTinel1
             // 
             this.lablblThongTinel1.AutoSize = true;
-            this.lablblThongTinel1.Location = new System.Drawing.Point(107, 92);
+            this.lablblThongTinel1.Location = new System.Drawing.Point(107, 90);
             this.lablblThongTinel1.Name = "lablblThongTinel1";
             this.lablblThongTinel1.Size = new System.Drawing.Size(68, 16);
             this.lablblThongTinel1.TabIndex = 21;
@@ -229,7 +231,7 @@
             // lblBenNam
             // 
             this.lblBenNam.AutoSize = true;
-            this.lblBenNam.Location = new System.Drawing.Point(308, 89);
+            this.lblBenNam.Location = new System.Drawing.Point(297, 86);
             this.lblBenNam.Name = "lblBenNam";
             this.lblBenNam.Size = new System.Drawing.Size(63, 16);
             this.lblBenNam.TabIndex = 22;
@@ -238,7 +240,7 @@
             // lblBenNu
             // 
             this.lblBenNu.AutoSize = true;
-            this.lblBenNu.Location = new System.Drawing.Point(550, 88);
+            this.lblBenNu.Location = new System.Drawing.Point(550, 86);
             this.lblBenNu.Name = "lblBenNu";
             this.lblBenNu.Size = new System.Drawing.Size(51, 16);
             this.lblBenNu.TabIndex = 23;
@@ -282,7 +284,7 @@
             this.Controls.Add(this.txtHoTenNu);
             this.Controls.Add(this.txtLanKetHonNam);
             this.Controls.Add(this.txtGiayToTuyThanNam);
-            this.Controls.Add(this.txtNoiCuTru);
+            this.Controls.Add(this.txtNoiCuTruNam);
             this.Controls.Add(this.txtQuocTichNam);
             this.Controls.Add(this.txtDanTocNam);
             this.Controls.Add(this.txtNgaySinhNam);
@@ -314,7 +316,7 @@
         private System.Windows.Forms.TextBox txtNgaySinhNam;
         private System.Windows.Forms.TextBox txtDanTocNam;
         private System.Windows.Forms.TextBox txtQuocTichNam;
-        private System.Windows.Forms.TextBox txtNoiCuTru;
+        private System.Windows.Forms.TextBox txtNoiCuTruNam;
         private System.Windows.Forms.TextBox txtGiayToTuyThanNam;
         private System.Windows.Forms.TextBox txtLanKetHonNam;
         private System.Windows.Forms.TextBox txtLanKetHonNu;

@@ -136,5 +136,10 @@ namespace DoAn_Nhom7
             HonNhanVaGiaDinh form1 = new HonNhanVaGiaDinh();
             form1.ShowDialog();
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

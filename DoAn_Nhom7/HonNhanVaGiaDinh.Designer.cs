@@ -72,6 +72,7 @@
             this.Controls.Add(this.btnDangKyKetHon);
             this.Name = "HonNhanVaGiaDinh";
             this.Text = "HonNhanVaGiaDinh";
+            this.Load += new System.EventHandler(this.HonNhanVaGiaDinh_Load);
             this.ResumeLayout(false);
 
         }
