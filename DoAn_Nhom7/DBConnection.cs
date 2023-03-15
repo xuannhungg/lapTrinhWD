@@ -59,5 +59,43 @@ namespace DoAn_Nhom7
             conn.Close();
             return dts;
         }
+        public void LapDayThongTin(TextBox cmnd,TextBox a,TextBox b,TextBox c,TextBox d,TextBox f)
+        {
+            conn.Open();
+            string sqlStr = "Select * from CongDan where cmnd = '" + cmnd.Text + "'";
+            SqlCommand cmd = new SqlCommand(sqlStr, conn);
+            SqlDataReader dta = cmd.ExecuteReader();
+            while (dta.Read())
+            {
+                a.Text = Convert.ToString(dta["hoTen"]);
+                b.Text = Convert.ToString(dta["ngayThangNamSinh"]); ;
+                c.Text = Convert.ToString(dta["danToc"]);
+                d.Text = Convert.ToString(dta["queQuan"]);
+                f.Text = Convert.ToString(dta["noiThuongTru"]);
+            }
+            conn.Close();
+        }
+        public void LapDayThongTinCD(TextBox cmnd, TextBox a,DateTimePicker dt, TextBox b, TextBox d, TextBox f,TextBox g,TextBox j,TextBox k, TextBox x, TextBox y, TextBox z)
+        {
+            conn.Open();
+            string sqlStr = "Select * from CongDan where cmnd = '" + cmnd.Text + "'";
+            SqlCommand cmd = new SqlCommand(sqlStr, conn);
+            SqlDataReader dta = cmd.ExecuteReader();
+            while (dta.Read())
+            {
+                a.Text = Convert.ToString(dta["hoTen"]);
+                dt.Text = Convert.ToString(dta["ngayThangNamSinh"]);
+                b.Text = Convert.ToString(dta["gioiTinh"]);
+                d.Text = Convert.ToString(dta["danToc"]);
+                f.Text = Convert.ToString(dta["tinhTrangHonNhan"]);
+                g.Text = Convert.ToString(dta["noiDangKiKhaiSinh"]);
+                j.Text = Convert.ToString(dta["queQuan"]);
+                k.Text = Convert.ToString(dta["noiThuongTru"]);
+                x.Text = Convert.ToString(dta["trinhDoHocVan"]);
+                y.Text = Convert.ToString(dta["ngheNghiep"]);
+                z.Text = Convert.ToString(dta["luong"]);
+            }
+            conn.Close();
+        }
     }
 }

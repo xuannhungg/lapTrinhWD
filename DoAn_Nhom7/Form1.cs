@@ -29,7 +29,7 @@ namespace DoAn_Nhom7
             form2.Show();
         }
 
- 
+
         private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
         {
             DangNhap form3 = new DangNhap();
@@ -106,7 +106,7 @@ namespace DoAn_Nhom7
             DataSet set = new DataSet();
             adapter.Fill(set);
             dGVDanhSach.DataSource = set.Tables[0];
-            
+
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -137,10 +137,15 @@ namespace DoAn_Nhom7
             form1.ShowDialog();
         }
 
+
         private void btnSoHoKhau_Click(object sender, EventArgs e)
         {
             FSoHoKhau FsoHoKhau = new FSoHoKhau();
             FsoHoKhau.Show();
+        } 
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

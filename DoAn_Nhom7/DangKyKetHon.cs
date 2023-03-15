@@ -14,6 +14,7 @@ namespace DoAn_Nhom7
     public partial class DangKyKetHon : Form
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.conStr);
+        DBConnection dbconnection = new DBConnection();
         CongDanDAO cddao = new CongDanDAO();
         public DangKyKetHon()
         {
@@ -26,6 +27,23 @@ namespace DoAn_Nhom7
             cddao.CapNhatKetHon(cdA);
             CongDan cdB = new CongDan(txtGiayToTuyThanNu.Text);
             cddao.CapNhatKetHon(cdB);
+        }
+
+        private void txtGiayToTuyThanNam_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                dbconnection.LapDayThongTin(txtGiayToTuyThanNam, txtHoTenNam, txtNgaySinhNam, txtDanTocNam, txtQuocTichNam, txtNoiCuTruNam);
+
+            }
+        }
+
+        private void txtGiayToTuyThanNu_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                dbconnection.LapDayThongTin(txtGiayToTuyThanNu, txtHoTenNu, txtNgaySinhNu,txtDanTocNu, txtQuocTichNu, txtNoiCuTruNu);
+            }
         }
     }
 }

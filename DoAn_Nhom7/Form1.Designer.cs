@@ -101,6 +101,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Trang chu";
             this.tabPage1.UseVisualStyleBackColor = true;
+          
             // 
             // panel2
             // 

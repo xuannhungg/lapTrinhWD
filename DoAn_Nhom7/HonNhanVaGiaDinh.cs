@@ -19,9 +19,10 @@ namespace DoAn_Nhom7
 
         private void btnDangKyKetHon_Click(object sender, EventArgs e)
         {
-            DangKyKetHon formDKKetHon = new DangKyKetHon();
-            formDKKetHon.Show();
+            DangKyKetHon form1 = new DangKyKetHon();
+            form1.ShowDialog();
         }
+
 
         private void btnDangKyLyHon_Click(object sender, EventArgs e)
         {
@@ -29,9 +30,5 @@ namespace DoAn_Nhom7
             form1.ShowDialog();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

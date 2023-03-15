@@ -143,6 +143,7 @@
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.Size = new System.Drawing.Size(100, 22);
             this.txtCCCD.TabIndex = 19;
+            this.txtCCCD.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCCCD_KeyDown);
             // 
             // label2
             // 
@@ -164,6 +165,7 @@
             // 
             // dTPNgaySinh
             // 
+            this.dTPNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dTPNgaySinh.Location = new System.Drawing.Point(219, 96);
             this.dTPNgaySinh.Name = "dTPNgaySinh";
             this.dTPNgaySinh.Size = new System.Drawing.Size(200, 22);
