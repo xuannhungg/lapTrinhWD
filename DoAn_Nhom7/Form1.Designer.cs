@@ -222,6 +222,7 @@
             this.btnSoHoKhau.TabIndex = 3;
             this.btnSoHoKhau.Text = "So ho khau";
             this.btnSoHoKhau.UseVisualStyleBackColor = true;
+            this.btnSoHoKhau.Click += new System.EventHandler(this.btnSoHoKhau_Click);
             // 
             // btnThue
             // 

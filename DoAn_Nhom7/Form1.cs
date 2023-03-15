@@ -136,5 +136,11 @@ namespace DoAn_Nhom7
             HonNhanVaGiaDinh form1 = new HonNhanVaGiaDinh();
             form1.ShowDialog();
         }
+
+        private void btnSoHoKhau_Click(object sender, EventArgs e)
+        {
+            FSoHoKhau FsoHoKhau = new FSoHoKhau();
+            FsoHoKhau.Show();
+        }
     }
 }

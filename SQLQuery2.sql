@@ -22,4 +22,4 @@ VALUES ('nva2', '25/12/2003', 'nam','1800458','kinh','chua ket hon','nghe an','n
 
 select * from CongDan
 
-
+/*Data Source=MSI\HMT;Initial Catalog=project_LTWD;Integrated Security=True*/
